@@ -1,0 +1,2176 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+.burger {
+    display: none
+}
+
+.application,
+.beware_of_fakes,
+.connection,
+.contacts,
+.gallery,
+.homepage,
+.projects,
+.projects_second,
+.second_gallery {
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: url(../img/background.jpg)
+}
+
+.application .container,
+.beware_of_fakes .container,
+.connection .container,
+.contacts .container,
+.gallery .container,
+.homepage .container,
+.projects .container,
+.projects_second .container,
+.second_gallery .container {
+    width: 100%;
+    height: 100vh
+}
+
+.application .container .header,
+.beware_of_fakes .container .header,
+.connection .container .header,
+.contacts .container .header,
+.gallery .container .header,
+.homepage .container .header,
+.projects .container .header,
+.projects_second .container .header {
+    width: 100%;
+    height: 75px;
+    background-color: #242424;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.application .container .header .logo,
+.beware_of_fakes .container .header .logo,
+.connection .container .header .logo,
+.contacts .container .header .logo,
+.gallery .container .header .logo,
+.homepage .container .header .logo,
+.projects .container .header .logo,
+.projects_second .container .header .logo {
+    margin-left: 20px
+}
+
+.application .container .header .logo img,
+.beware_of_fakes .container .header .logo img,
+.connection .container .header .logo img,
+.contacts .container .header .logo img,
+.gallery .container .header .logo img,
+.homepage .container .header .logo img,
+.projects .container .header .logo img,
+.projects_second .container .header .logo img {
+    width: 200px;
+    height: 44px
+}
+
+.application .container .header .navigation,
+.beware_of_fakes .container .header .navigation,
+.connection .container .header .navigation,
+.contacts .container .header .navigation,
+.gallery .container .header .navigation,
+.homepage .container .header .navigation,
+.projects .container .header .navigation,
+.projects_second .container .header .navigation {
+    margin-right: 20px;
+    margin-left: 10%
+}
+
+.application .container .header .navigation a,
+.beware_of_fakes .container .header .navigation a,
+.connection .container .header .navigation a,
+.contacts .container .header .navigation a,
+.gallery .container .header .navigation a,
+.homepage .container .header .navigation a,
+.projects .container .header .navigation a,
+.projects_second .container .header .navigation a {
+    margin-right: 15px;
+    transition: .3s;
+    opacity: .7;
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff
+}
+
+.application .container .header .navigation a:last-child,
+.beware_of_fakes .container .header .navigation a:last-child,
+.connection .container .header .navigation a:last-child,
+.contacts .container .header .navigation a:last-child,
+.gallery .container .header .navigation a:last-child,
+.homepage .container .header .navigation a:last-child,
+.projects .container .header .navigation a:last-child,
+.projects_second .container .header .navigation a:last-child {
+    margin-right: 0
+}
+
+.application .container .header .navigation a:hover,
+.beware_of_fakes .container .header .navigation a:hover,
+.connection .container .header .navigation a:hover,
+.contacts .container .header .navigation a:hover,
+.gallery .container .header .navigation a:hover,
+.homepage .container .header .navigation a:hover,
+.projects .container .header .navigation a:hover,
+.projects_second .container .header .navigation a:hover {
+    transition: .3s;
+    opacity: 1
+}
+
+.application .container .header .navigation .active,
+.beware_of_fakes .container .header .navigation .active,
+.connection .container .header .navigation .active,
+.contacts .container .header .navigation .active,
+.gallery .container .header .navigation .active,
+.homepage .container .header .navigation .active,
+.projects .container .header .navigation .active,
+.projects_second .container .header .navigation .active {
+    opacity: 1;
+    color: #ff0
+}
+
+.homepage .container .grid-container {
+    height: 92%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "main .""main ."
+}
+
+.homepage .container .grid-container .main {
+    background-image: url(../img/background_main_homepage.jpeg);
+    box-sizing: border-box;
+    background-size: cover;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.homepage .container .grid-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.homepage .container .grid-container div img {
+    height: 46vh;
+    width: 100%;
+    object-fit: cover
+}
+
+.homepage .container .grid-container .main .title {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px
+}
+
+.homepage .container .grid-container .main .title span {
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+    text-align: right
+}
+
+.homepage .container .grid-container .main .title .title_company {
+    font-weight: 800;
+    font-size: 80px;
+    text-align: left
+}
+
+.homepage .container .grid-container .main .description {
+    width: 95%;
+    margin-bottom: 5%;
+    position: relative
+}
+
+.homepage .container .grid-container .main .description .background {
+    position: absolute;
+    background-color: #548235;
+    opacity: .6;
+    width: 100%;
+    height: 100%
+}
+
+.homepage .container .grid-container .main .description p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+    z-index: 1
+}
+
+.gallery .container .grid-container {
+    height: 92%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr .3fr 1.5fr;
+    gap: 1px 1px;
+    grid-template-areas: "rybigne pribrezhniy_park private_property private_property private_property""rybigne pribrezhniy_park central_park1 central_park1 central_park1""central_park central_park central_park1 central_park1 central_park1"
+}
+
+.gallery .container .grid-container .rybigne {
+    grid-area: rybigne;
+    background-image: url(../img/rybigne.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.gallery .container .grid-container .pribrezhniy_park {
+    grid-area: pribrezhniy_park;
+    background-image: url(../img/pribrezny_park_smal.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.gallery .container .grid-container .private_property {
+    grid-area: private_property;
+    background-image: url(../img/private_property.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.gallery .container .grid-container .central_park {
+    grid-area: central_park;
+    background-image: url(../img/central_park.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.gallery .container .grid-container .central_park1 {
+    grid-area: central_park1;
+    background-image: url(../img/pribrezny_park.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.gallery .container .grid-container .central_park .show,
+.gallery .container .grid-container .central_park1 .show,
+.gallery .container .grid-container .pribrezhniy_park .show,
+.gallery .container .grid-container .private_property .show,
+.gallery .container .grid-container .rybigne .show {
+    width: 100%;
+    height: 100%;
+    transition: .3s
+}
+
+.gallery .container .grid-container .central_park .show:hover,
+.gallery .container .grid-container .central_park1 .show:hover,
+.gallery .container .grid-container .pribrezhniy_park .show:hover,
+.gallery .container .grid-container .private_property .show:hover,
+.gallery .container .grid-container .rybigne .show:hover {
+    opacity: 1;
+    transition: .3s
+}
+
+.gallery .container .grid-container .central_park .show .background,
+.gallery .container .grid-container .central_park1 .show .background,
+.gallery .container .grid-container .pribrezhniy_park .show .background,
+.gallery .container .grid-container .private_property .show .background,
+.gallery .container .grid-container .rybigne .show .background {
+    background-color: #2f5597;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s
+}
+
+.gallery .container .grid-container .central_park .show:hover .background,
+.gallery .container .grid-container .central_park1 .show:hover .background,
+.gallery .container .grid-container .pribrezhniy_park .show:hover .background,
+.gallery .container .grid-container .private_property .show:hover .background,
+.gallery .container .grid-container .rybigne .show:hover .background {
+    transition: 1s;
+    width: 100%;
+    height: 100%
+}
+
+.gallery .container .grid-container .central_park .show .border_bottom,
+.gallery .container .grid-container .central_park1 .show .border_bottom,
+.gallery .container .grid-container .pribrezhniy_park .show .border_bottom,
+.gallery .container .grid-container .private_property .show .border_bottom,
+.gallery .container .grid-container .rybigne .show .border_bottom {
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    transition: 1s
+}
+
+.gallery .container .grid-container .central_park .show:hover .border_bottom,
+.gallery .container .grid-container .central_park1 .show:hover .border_bottom,
+.gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom,
+.gallery .container .grid-container .private_property .show:hover .border_bottom,
+.gallery .container .grid-container .rybigne .show:hover .border_bottom {
+    bottom: 0;
+    top: 40%;
+    font-size: 18px;
+    align-items: center;
+    border-bottom: 5px solid #ff0;
+    width: 50%;
+    height: 15%;
+    transition: 1s;
+    padding: 5px 0
+}
+
+.gallery .container .grid-container .central_park .show .border_bottom p,
+.gallery .container .grid-container .central_park1 .show .border_bottom p,
+.gallery .container .grid-container .pribrezhniy_park .show .border_bottom p,
+.gallery .container .grid-container .private_property .show .border_bottom p,
+.gallery .container .grid-container .rybigne .background .show .border_bottom p {
+    margin: 0;
+    text-align: center
+}
+
+.second_gallery .container .grid-container {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "post_ave post_ave post_ave gorishny_plavni gorishny_plavni gorishny_plavni""post_ave post_ave post_ave gorishny_plavni gorishny_plavni gorishny_plavni""post_ave post_ave post_ave gorishny_plavni gorishny_plavni gorishny_plavni""pribrezhniy_park pribrezhniy_park central_park central_park dnepr dnepr""pribrezhniy_park pribrezhniy_park central_park central_park dnepr dnepr"
+}
+
+.second_gallery .container .grid-container .post_ave {
+    grid-area: post_ave;
+    background-image: url(../img/post_ave.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.second_gallery .container .grid-container .dnepr {
+    grid-area: dnepr;
+    background-image: url(../img/dnepr.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.second_gallery .container .grid-container .gorishny_plavni {
+    grid-area: gorishny_plavni;
+    background-image: url(../img/gorishny_plavni.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.second_gallery .container .grid-container .central_park {
+    grid-area: central_park;
+    background-image: url(../img/central_park_second.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.second_gallery .container .grid-container .pribrezhniy_park {
+    grid-area: pribrezhniy_park;
+    background-image: url(../img/pribrezhniy_park_second.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.second_gallery .container .grid-container .central_park .show,
+.second_gallery .container .grid-container .dnepr .show,
+.second_gallery .container .grid-container .gorishny_plavni .show,
+.second_gallery .container .grid-container .post_ave .show,
+.second_gallery .container .grid-container .pribrezhniy_park .show {
+    width: 100%;
+    height: 100%;
+    transition: .3s
+}
+
+.second_gallery .container .grid-container .central_park .show:hover,
+.second_gallery .container .grid-container .dnepr .show:hover,
+.second_gallery .container .grid-container .gorishny_plavni .show:hover,
+.second_gallery .container .grid-container .post_ave .show:hover,
+.second_gallery .container .grid-container .pribrezhniy_park .show:hover {
+    opacity: 1;
+    transition: .3s
+}
+
+.second_gallery .container .grid-container .central_park .show .background,
+.second_gallery .container .grid-container .dnepr .show .background,
+.second_gallery .container .grid-container .gorishny_plavni .show .background,
+.second_gallery .container .grid-container .post_ave .show .background,
+.second_gallery .container .grid-container .pribrezhniy_park .show .background {
+    background-color: #2f5597;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 1s
+}
+
+.second_gallery .container .grid-container .central_park .show:hover .background,
+.second_gallery .container .grid-container .dnepr .show:hover .background,
+.second_gallery .container .grid-container .gorishny_plavni .show:hover .background,
+.second_gallery .container .grid-container .post_ave .show:hover .background,
+.second_gallery .container .grid-container .pribrezhniy_park .show:hover .background {
+    transition: 1s;
+    width: 100%;
+    height: 100%
+}
+
+.second_gallery .container .grid-container .central_park .show .border_bottom,
+.second_gallery .container .grid-container .dnepr .show .border_bottom,
+.second_gallery .container .grid-container .gorishny_plavni .show .border_bottom,
+.second_gallery .container .grid-container .post_ave .show .border_bottom,
+.second_gallery .container .grid-container .pribrezhniy_park .show .border_bottom {
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    transition: 1s;
+    padding: 5px 0
+}
+
+.second_gallery .container .grid-container .central_park .show:hover .border_bottom,
+.second_gallery .container .grid-container .dnepr .show:hover .border_bottom,
+.second_gallery .container .grid-container .gorishny_plavni .show:hover .border_bottom,
+.second_gallery .container .grid-container .post_ave .show:hover .border_bottom,
+.second_gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom {
+    transition: 1s;
+    width: 50%;
+    font-size: 18px;
+    border-bottom: 5px solid #ff0;
+    align-items: center;
+    top: 40%;
+    bottom: 0;
+    height: 15%
+}
+
+.second_gallery .container .grid-container .central_park .show .border_bottom p,
+.second_gallery .container .grid-container .dnepr .show .border_bottom p,
+.second_gallery .container .grid-container .gorishny_plavni .show .border_bottom p,
+.second_gallery .container .grid-container .post_ave .show .border_bottom p,
+.second_gallery .container .grid-container .pribrezhniy_park .show .border_bottom p {
+    margin: 0;
+    text-align: center
+}
+
+.application .container .grid-container {
+    height: 92%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "traffic_lights led_stone led_stone pavement reservior""traffic_lights led_stone led_stone wall_mounting under_the_order""area cycle_track cycle_track led_tree garden"
+}
+
+.application .container .grid-container .cycle_track {
+    grid-area: cycle_track;
+    background-image: url(../img/cycle_track.jpeg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .area {
+    grid-area: area;
+    background-image: url(../img/area.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .led_tree {
+    grid-area: led_tree;
+    background-image: url(../img/led_tree.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .garden {
+    grid-area: garden;
+    background-image: url(../img/garden.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .traffic_lights {
+    grid-area: traffic_lights;
+    background-image: url(../img/traffic_lights.jpeg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .led_stone {
+    grid-area: led_stone;
+    background-image: url(../img/led_stone.jpeg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .pavement {
+    grid-area: pavement;
+    background-image: url(../img/pavement.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .reservior {
+    grid-area: reservior;
+    background-image: url(../img/reservior.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .wall_mounting {
+    grid-area: wall_mounting;
+    background-image: url(../img/wall_mounting.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .under_the_order {
+    grid-area: under_the_order;
+    background-image: url(../img/under_the_order.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.application .container .grid-container .area .show,
+.application .container .grid-container .cycle_track .show,
+.application .container .grid-container .garden .show,
+.application .container .grid-container .led_stone .show,
+.application .container .grid-container .led_tree .show,
+.application .container .grid-container .pavement .show,
+.application .container .grid-container .reservior .show,
+.application .container .grid-container .traffic_lights .show,
+.application .container .grid-container .under_the_order .show,
+.application .container .grid-container .wall_mounting .show {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s
+}
+
+.application .container .grid-container .area .show:hover,
+.application .container .grid-container .cycle_track .show:hover,
+.application .container .grid-container .garden .show:hover,
+.application .container .grid-container .led_stone .show:hover,
+.application .container .grid-container .led_tree .show:hover,
+.application .container .grid-container .pavement .show:hover,
+.application .container .grid-container .reservior .show:hover,
+.application .container .grid-container .traffic_lights .show:hover,
+.application .container .grid-container .under_the_order .show:hover,
+.application .container .grid-container .wall_mounting .show:hover {
+    opacity: 1;
+    transition: .3s
+}
+
+.application .container .grid-container .area .show .background,
+.application .container .grid-container .cycle_track .show .background,
+.application .container .grid-container .garden .show .background,
+.application .container .grid-container .led_stone .show .background,
+.application .container .grid-container .led_tree .show .background,
+.application .container .grid-container .pavement .show .background,
+.application .container .grid-container .reservior .show .background,
+.application .container .grid-container .traffic_lights .show .background,
+.application .container .grid-container .under_the_order .show .background,
+.application .container .grid-container .wall_mounting .show .background {
+    width: 100%;
+    height: 100%;
+    background-color: #2f5597;
+    opacity: .95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: .3s;
+    z-index: 2
+}
+
+.application .container .grid-container .area .show .border_bottom,
+.application .container .grid-container .cycle_track .show .border_bottom,
+.application .container .grid-container .garden .show .border_bottom,
+.application .container .grid-container .led_stone .show .border_bottom,
+.application .container .grid-container .led_tree .show .border_bottom,
+.application .container .grid-container .pavement .show .border_bottom,
+.application .container .grid-container .reservior .show .border_bottom,
+.application .container .grid-container .traffic_lights .show .border_bottom,
+.application .container .grid-container .under_the_order .show .border_bottom,
+.application .container .grid-container .wall_mounting .show .border_bottom {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 10%;
+    left: 5%
+}
+
+.application .container .grid-container .area .show .border_bottom p,
+.application .container .grid-container .cycle_track .show .border_bottom p,
+.application .container .grid-container .garden .show .border_bottom p,
+.application .container .grid-container .led_stone .show .border_bottom p,
+.application .container .grid-container .led_tree .show .border_bottom p,
+.application .container .grid-container .pavement .show .border_bottom p,
+.application .container .grid-container .reservior .show .border_bottom p,
+.application .container .grid-container .traffic_lights .show .border_bottom p,
+.application .container .grid-container .under_the_order .show .border_bottom p,
+.application .container .grid-container .wall_mounting .show .border_bottom p {
+    margin: 0
+}
+
+.application .container .grid-container .area .description,
+.application .container .grid-container .cycle_track .description,
+.application .container .grid-container .garden .description,
+.application .container .grid-container .led_stone .description,
+.application .container .grid-container .led_tree .description,
+.application .container .grid-container .pavement .description,
+.application .container .grid-container .reservior .description,
+.application .container .grid-container .traffic_lights .description,
+.application .container .grid-container .under_the_order .description,
+.application .container .grid-container .wall_mounting .description {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.application .container .grid-container .area .description .con,
+.application .container .grid-container .cycle_track .description .con,
+.application .container .grid-container .garden .description .con,
+.application .container .grid-container .led_stone .description .con,
+.application .container .grid-container .led_tree .description .con,
+.application .container .grid-container .pavement .description .con,
+.application .container .grid-container .reservior .description .con,
+.application .container .grid-container .traffic_lights .description .con,
+.application .container .grid-container .under_the_order .description .con,
+.application .container .grid-container .wall_mounting .description .con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.application .container .grid-container .area .description .con .back_color,
+.application .container .grid-container .led_stone .description .con .back_color,
+.application .container .grid-container .led_tree .description .con .back_color,
+.application .container .grid-container .pavement .description .con .back_color,
+.application .container .grid-container .wall_mounting .description .con .back_color {
+    position: absolute;
+    opacity: .5;
+    background-color: #000;
+    width: 90%;
+    height: 7%;
+    top: 5%
+}
+
+.application .container .grid-container .cycle_track .description .con .back_color,
+.application .container .grid-container .garden .description .con .back_color,
+.application .container .grid-container .reservior .description .con .back_color,
+.application .container .grid-container .traffic_lights .description .con .back_color,
+.application .container .grid-container .under_the_order .description .con .back_color {
+    position: absolute;
+    opacity: .5;
+    background-color: #000;
+    width: 90%;
+    height: 7%;
+    bottom: 5%
+}
+
+.application .container .grid-container .area .description .con span,
+.application .container .grid-container .led_stone .description .con span,
+.application .container .grid-container .led_tree .description .con span,
+.application .container .grid-container .pavement .description .con span,
+.application .container .grid-container .wall_mounting .description .con span {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    top: 5%
+}
+
+.application .container .grid-container .cycle_track .description .con span,
+.application .container .grid-container .garden .description .con span,
+.application .container .grid-container .reservior .description .con span,
+.application .container .grid-container .traffic_lights .description .con span,
+.application .container .grid-container .under_the_order .description .con span {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    bottom: 6%
+}
+
+.application .container .grid-container .traffic_lights .description .con span {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    bottom: 7%
+}
+
+.application .container .grid-container .led_stone .description .con span {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    z-index: 1;
+    top: 7%
+}
+
+.projects .container .grid-container {
+    height: 92%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "smart_cross_walk landscaping architectural_lighting lighting_of_swimming_pools"
+}
+
+.projects .container .grid-container .smart_cross_walk {
+    grid-area: smart_cross_walk;
+    background-image: url(../img/smart_cross_walk_bg.png);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.projects .container .grid-container .landscaping {
+    grid-area: landscaping;
+    background-image: url(../img/landscaping_bg.png);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.projects .container .grid-container .architectural_lighting {
+    grid-area: architectural_lighting;
+    background-image: url(../img/architectural_lighting_bg.png);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.projects .container .grid-container .lighting_of_swimming_pools {
+    grid-area: lighting_of_swimming_pools;
+    background-image: url(../img/lighting_of_swimming_pools_bg.jpeg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.projects .container .grid-container {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #fff
+}
+
+.projects .container .grid-container div .bg_color {
+    background-color: #000;
+    opacity: .4;
+    position: absolute;
+    width: 100%;
+    height: 80px
+}
+
+.projects .container .grid-container div .text {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    transition: .3s
+}
+
+.projects .container .grid-container div .text a {
+    text-decoration: none
+}
+
+.projects .container .grid-container div .text:hover {
+    transition: .3s;
+    border-bottom: 5px solid #ff0;
+    cursor: pointer
+}
+
+.projects_second .container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 98%;
+    height: 95%;
+    color: #fff;
+    font-size: 22px
+}
+
+.projects_second .container .content>div {
+    width: 33%;
+    height: 90%;
+    background-color: #000
+}
+
+.projects_second .container .content .title {
+    margin: 15px 0;
+    padding: 0;
+    width: 100%;
+    color: #f0d68a;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700
+}
+
+.projects_second .container .content img {
+    width: 100%;
+    height: 60%
+}
+
+.projects_second .container .content .beautiful_aesthetic div,
+.projects_second .container .content .reliable_practical div,
+.projects_second .container .content .wide_range div {
+    margin: 15px 15px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.projects_second .container .content .beautiful_aesthetic div p {
+    margin: 0;
+    padding: 0
+}
+
+.projects_second .container .content .reliable_practical div ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style: circle;
+    text-align: justify
+}
+
+.beware_of_fakes .container {
+    position: relative
+}
+
+.beware_of_fakes .container .patent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.beware_of_fakes .container .patent img {
+    width: 25%
+}
+
+.beware_of_fakes .container .patent a {
+    margin-right: 5%;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #255582;
+    transition: .3s
+}
+
+.beware_of_fakes .container .patent a:hover {
+    transition: .3s;
+    color: red
+}
+
+.beware_of_fakes .container .content {
+    height: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.beware_of_fakes .container .storage {
+    margin-top: 3%;
+    width: 60%
+}
+
+.beware_of_fakes .container .storage img {
+    width: 100%
+}
+
+#carousel--3d {
+    margin: 0;
+    width: 89%;
+    height: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.slider-container {
+    position: relative;
+    perspective: 350px;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 85%
+}
+
+.slider-container {
+    position: relative
+}
+
+.slider-container figure input {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer
+}
+
+.slider-container figure input:nth-child(1) {
+    left: 35%
+}
+
+.slider-container figure input:nth-child(3) {
+    right: 44%
+}
+
+input[type=radio]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 5px solid #255582
+}
+
+input[type=radio]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #255582;
+    transform: translate(-50%, -50%);
+    visibility: visible
+}
+
+.carousel-3d-item {
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    outline: 1px solid transparent
+}
+
+.carousel-3d-item .slide-img {
+    width: 400px
+}
+
+#carousel-3d-controller-1~.carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-1~.carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-1~.carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-2~.carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-2~.carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-2~.carousel-3d-item:nth-of-type(3) {
+    transition: all 1s cubic-bezier(.48, .16, .15, .98)
+}
+
+#carousel-3d-controller-1:checked~.carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-2:checked~.carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-3:checked~.carousel-3d-item:nth-of-type(1),
+.carousel-3d-item:nth-of-type(2) {
+    transform: translateX(-175px) translateZ(-130px);
+    opacity: .9;
+    transition: all 1s cubic-bezier(.48, .16, .15, .98)
+}
+
+#carousel-3d-controller-1:checked~.carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-2:checked~.carousel-3d-item:nth-of-type(2),
+#carousel-3d-controller-3:checked~.carousel-3d-item:nth-of-type(3),
+.carousel-3d-item:nth-of-type(1) {
+    transform: translateX(0) translateZ(0);
+    opacity: 1;
+    transition: all 1s cubic-bezier(.48, .16, .15, .98)
+}
+
+#carousel-3d-controller-1:checked~.carousel-3d-item:nth-of-type(3),
+#carousel-3d-controller-2:checked~.carousel-3d-item:nth-of-type(1),
+#carousel-3d-controller-3:checked~.carousel-3d-item:nth-of-type(2),
+.carousel-3d-item:nth-of-type(3) {
+    transform: translateX(175px) translateZ(-130px);
+    opacity: .9;
+    transition: all 1s cubic-bezier(.48, .16, .15, .98)
+}
+
+.beware_of_fakes .container .sertificate {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.beware_of_fakes .container .content .sertificate .title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 11%
+}
+
+.beware_of_fakes .container .content .sertificate img {
+    width: 100%
+}
+
+.beware_of_fakes .container .dots .main_circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #255582;
+    position: relative;
+    margin: 0 20px;
+    margin-bottom: 20px
+}
+
+.beware_of_fakes .container .dots .main_circle .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .3s;
+    position: absolute;
+    top: 15%;
+    left: 16%
+}
+
+.beware_of_fakes .container .dots .main_circle .circle:hover {
+    transition: .3s;
+    background-color: #000;
+    cursor: pointer
+}
+
+.connection .container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.connection .container .content .main {
+    width: 40%;
+    margin: 4% 0 4% 3%
+}
+
+.connection .container .content .main h2 {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 24px
+}
+
+.connection .container .content .main p {
+    margin: 40px 0 80px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px
+}
+
+.connection .container .content .main .download {
+    margin-top: 20px;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.connection .container .content .main .download img {
+    height: 50px;
+    width: 50px
+}
+
+.connection .container .content .main .download a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4166a9
+}
+
+.connection .container .content .main .spec {
+    margin-top: 20px;
+    background-color: #fff;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.connection .container .content .main .spec img {
+    height: 50px;
+    width: 50px
+}
+
+.connection .container .content .main .spec .tel {
+    width: 75%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4166a9
+}
+
+.connection .container .content .image {
+    margin: 1%;
+    width: 40%
+}
+
+.connection .container .content .image img {
+    width: 100%
+}
+
+.contacts .container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.contacts .container .content .main {
+    margin: 5% 2%;
+    width: 30%
+}
+
+.contacts .container .content .main img {
+    width: 50px;
+    height: 50px
+}
+
+.contacts .container .content .main h2 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0
+}
+
+.contacts .container .content .main .adress,
+.contacts .container .content .main .adress1,
+.contacts .container .content .main .contact {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.contacts .container .content .main .contact {
+    margin-top: 0
+}
+
+.contacts .container .content .main .adress .pos,
+.contacts .container .content .main .adress1 .pos,
+.contacts .container .content .main .contact .pos {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column
+}
+
+.contacts .container .content .main .contact .pos {
+    margin-top: 60px
+}
+
+.contacts .container .content .main .adress .pos span,
+.contacts .container .content .main .adress1 .pos span,
+.contacts .container .content .main .contact .pos span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 5px
+}
+
+.contacts .container .content .main .adress .pos span:first-child,
+.contacts .container .content .main .adress1 .pos span:first-child,
+.contacts .container .content .main .contact .pos span:first-child {
+    font-weight: 700
+}
+
+.contacts .container .content .main .contact .bg {
+    background-color: #fff;
+    border-radius: 50%
+}
+
+.contacts .container .content .image {
+    margin: 1%;
+    width: 60%
+}
+
+.contacts .container .content .image img {
+    width: 100%
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    text-align: right
+}
+
+a {
+    color: #fff
+}
+
+a:hover {
+    opacity: .7
+}
+
+.menu {
+    margin: 0 20px 0 0;
+    padding-left: 1.25em;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 50px;
+    text-align: right
+}
+
+.menu-close {
+    font-size: 0;
+    opacity: 0;
+    text-align: center;
+    font-weight: 700;
+    -webkit-transition: .2s;
+    transition: .2s
+}
+
+.menu-close-visible {
+    font-size: 2em;
+    opacity: 1;
+    -webkit-transition: .2s .4s;
+    transition: .2s .4s
+}
+
+.menu-global {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: .2s;
+    transition: .2s
+}
+
+.menu-global:hover {
+    left: 10px;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.menu-top {
+    top: 0
+}
+
+.menu-middle {
+    top: 18px
+}
+
+.menu-bottom {
+    top: 36px
+}
+
+.menu-text {
+    opacity: 0;
+    font-size: 0;
+    padding: 10px 0;
+    -webkit-transition: .1s;
+    transition: .1s
+}
+
+.expand {
+    box-shadow: rgba(0, 0, 0, .1) -2.5px 5px 7.5px, rgba(0, 0, 0, .1) 2.5px 5px 7.5px;
+    width: 200px;
+    height: 50px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.menu-top-expand {
+    top: 50px;
+    background: #fff8e1;
+    -webkit-transition: all .5s .2s, left .1s;
+    transition: all .5s .2s, left .1s
+}
+
+.menu-middle-expand {
+    top: 100px;
+    background: #ffecb3;
+    -webkit-transition: all .5s .1s, left .1s;
+    transition: all .5s .1s, left .1s
+}
+
+.menu-bottom-expand {
+    top: 150px;
+    height: 100px;
+    background: #ffe082;
+    -webkit-transition: all .5s, left .1s;
+    transition: all .5s, left .1s
+}
+
+.menu-text-expand {
+    color: #000;
+    opacity: .8;
+    padding: 10px;
+    font-size: 1.3em;
+    -webkit-transition: all .2s .7s, font-size .1s;
+    transition: all .2s .7s, font-size .1s
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2)
+}
+
+#footer-text {
+    padding-left: 60px
+}
+
+@media screen and (max-width:1601px) {
+    .carousel-3d-item .slide-img {
+        width: 280px
+    }
+    .carousel-3d-item {
+        left: 20%
+    }
+}
+
+@media screen and (max-width:1441px) {
+    .slider-container {
+        height: 70%
+    }
+}
+
+@media screen and (max-width:1383px) {
+    .gallery .container .grid-container .central_park .show:hover .border_bottom,
+    .gallery .container .grid-container .central_park1 .show:hover .border_bottom,
+    .gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom,
+    .gallery .container .grid-container .private_property .show:hover .border_bottom,
+    .gallery .container .grid-container .rybigne .show:hover .border_bottom {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width:1367px) {
+    .beware_of_fakes .container .storage {
+        margin-top: 0
+    }
+    .slider-container {
+        height: 80%
+    }
+    .carousel-3d-item .slide-img {
+        width: 200px
+    }
+    .carousel-3d-item {
+        left: 27%
+    }
+    .connection .container .content .image img {
+        width: 90%
+    }
+    .contacts .container .content .image img {
+        width: 90%
+    }
+    .application .container .grid-container {
+        height: 89%
+    }
+    .application .container .grid-container .area .description .con span,
+    .application .container .grid-container .led_stone .description .con span,
+    .application .container .grid-container .led_tree .description .con span,
+    .application .container .grid-container .pavement .description .con span,
+    .application .container .grid-container .wall_mounting .description .con span {
+        top: 2%
+    }
+    .application .container .grid-container .cycle_track .description .con span,
+    .application .container .grid-container .garden .description .con span,
+    .application .container .grid-container .reservior .description .con span,
+    .application .container .grid-container .under_the_order .description .con span {
+        bottom: 4%
+    }
+    .application .container .grid-container .led_stone .description .con span {
+        top: 6%
+    }
+    .application .container .grid-container .traffic_lights .description .con span {
+        bottom: 6%
+    }
+}
+
+@media screen and (max-width:1201px) {
+    .application .container .header .navigation,
+    .beware_of_fakes .container .header .navigation,
+    .connection .container .header .navigation,
+    .contacts .container .header .navigation,
+    .gallery .container .header .navigation,
+    .homepage .container .header .navigation,
+    .projects .container .header .navigation,
+    .projects_second .container .header .navigation {
+        display: none
+    }
+    .burger {
+        display: block
+    }
+    .carousel-3d-item .slide-img {
+        width: 250px
+    }
+    .slider-container {
+        height: 60%
+    }
+    .carousel-3d-item {
+        left: 24%
+    }
+}
+
+@media screen and (max-width:1153px) {
+    .gallery .container .grid-container .central_park .show:hover .border_bottom,
+    .gallery .container .grid-container .central_park1 .show:hover .border_bottom,
+    .gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom,
+    .gallery .container .grid-container .private_property .show:hover .border_bottom,
+    .gallery .container .grid-container .rybigne .show:hover .border_bottom {
+        font-size: 13px
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .gallery .container .grid-container .central_park .show:hover .border_bottom,
+    .gallery .container .grid-container .central_park1 .show:hover .border_bottom,
+    .gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom,
+    .gallery .container .grid-container .private_property .show:hover .border_bottom,
+    .gallery .container .grid-container .rybigne .show:hover .border_bottom {
+        width: 80%;
+        left: 10%
+    }
+}
+
+@media screen and (max-width:770px) {
+    .gallery .container .grid-container .pribrezhniy_park .show .border_bottom p {
+        text-align: right
+    }
+    .gallery .container .grid-container .rybigne .show .border_bottom {
+        margin: 0;
+        text-align: right
+    }
+}
+
+@media screen and (max-width:630px) {
+    .gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom p,
+    .gallery .container .grid-container .rybigne .show:hover .border_bottom p {
+        text-align: center
+    }
+}
+
+@media screen and (max-width:600px) {
+    .second_gallery .container .grid-container .central_park .show:hover .border_bottom,
+    .second_gallery .container .grid-container .dnepr .show:hover .border_bottom,
+    .second_gallery .container .grid-container .gorishny_plavni .show:hover .border_bottom,
+    .second_gallery .container .grid-container .post_ave .show:hover .border_bottom,
+    .second_gallery .container .grid-container .pribrezhniy_park .show:hover .border_bottom {
+        width: 80%;
+        left: 10%
+    }
+}
+
+@media screen and (max-width:801px) {
+    .beware_of_fakes .container .content,
+    .connection .container .content,
+    .contacts .container .content {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center
+    }
+}
+
+@media screen and (max-width:880px) {
+    .application .container .grid-container span {
+        font-size: 12px;
+        text-align: center
+    }
+    .projects .container .grid-container {
+        font-size: 20px
+    }
+    .homepage .container .grid-container .main .title .title_company {
+        font-size: 70px
+    }
+    .homepage .container .grid-container .main .title span {
+        font-size: 40px
+    }
+}
+
+@media screen and (max-width:770px) {
+    .application .container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "cycle_track area""led_tree garden""traffic_lights led_stone""pavement reservior""wall_mounting under_the_order"
+    }
+    .application .container .grid-container .area .description .con .back_color,
+    .application .container .grid-container .led_stone .description .con .back_color,
+    .application .container .grid-container .led_tree .description .con .back_color,
+    .application .container .grid-container .pavement .description .con .back_color,
+    .application .container .grid-container .wall_mounting .description .con .back_color {
+        height: 10%
+    }
+    .application .container .grid-container .cycle_track .description .con .back_color,
+    .application .container .grid-container .garden .description .con .back_color,
+    .application .container .grid-container .reservior .description .con .back_color,
+    .application .container .grid-container .traffic_lights .description .con .back_color,
+    .application .container .grid-container .under_the_order .description .con .back_color {
+        height: 10%
+    }
+}
+
+@media screen and (max-width:769px) {
+    .beware_of_fakes .container .content .sertificate {
+        height: 100%
+    }
+    .beware_of_fakes .container .content .sertificate .title {
+        margin-right: 0
+    }
+    #carousel--3d {
+        margin: 0 auto
+    }
+    .slider-container {
+        height: 70%
+    }
+    .slider-container figure input:nth-child(1) {
+        left: 41%
+    }
+    .slider-container figure input:nth-child(3) {
+        right: 39%
+    }
+    .carousel-3d-item {
+        left: 32%
+    }
+    .beware_of_fakes .container .patent {
+        width: 43%
+    }
+    .beware_of_fakes .container .patent a {
+        font-size: 17px
+    }
+    .homepage .container .grid-container .main .title .title_company {
+        font-size: 60px
+    }
+    .homepage .container .grid-container .main .title span {
+        font-size: 30px
+    }
+}
+
+@media screen and (max-width:681px) {
+    .projects .container .grid-container {
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width:645px) {
+    .homepage .container .grid-container .main .title .title_company {
+        font-size: 50px
+    }
+    .homepage .container .grid-container .main .title span {
+        font-size: 30px
+    }
+    .application .container .header .logo img,
+    .beware_of_fakes .container .header .logo img,
+    .connection .container .header .logo img,
+    .contacts .container .header .logo img,
+    .gallery .container .header .logo img,
+    .homepage .container .header .logo img,
+    .projects .container .header .logo img {
+        width: 100px;
+        height: 22px
+    }
+    .application .container .header,
+    .beware_of_fakes .container .header,
+    .connection .container .header,
+    .contacts .container .header,
+    .gallery .container .header,
+    .homepage .container .header,
+    .projects .container .header {
+        height: 50px
+    }
+    .gallery .container .grid-container {
+        height: 95%
+    }
+    .projects_second .container .content {
+        font-size: 14px
+    }
+    .projects_second .container .content img {
+        height: 75%
+    }
+}
+
+@media screen and (max-width:545px) {
+    .projects_second .container .content div .box {
+        margin: 5px
+    }
+}
+
+@media screen and (max-width:1601px) {
+    .projects_second .container .content img {
+        width: 80%
+    }
+}
+
+@media screen and (max-width:1367px) {
+    .projects_second .container .content img {
+        width: 70%
+    }
+    .projects_second .container .content {
+        font-size: 19px
+    }
+}
+
+@media screen and (max-width:1351px) {
+    .application .container .header .navigation,
+    .beware_of_fakes .container .header .navigation,
+    .connection .container .header .navigation,
+    .contacts .container .header .navigation,
+    .gallery .container .header .navigation,
+    .homepage .container .header .navigation,
+    .projects .container .header .navigation,
+    .projects_second .container .header .navigation {
+        margin-right: 20px;
+        margin-left: 2%
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .application .container .header .navigation,
+    .beware_of_fakes .container .header .navigation,
+    .connection .container .header .navigation,
+    .contacts .container .header .navigation,
+    .gallery .container .header .navigation,
+    .homepage .container .header .navigation,
+    .projects .container .header .navigation,
+    .projects_second .container .header .navigation {
+        margin-right: 10px;
+        margin-left: 0
+    }
+}
+
+@media screen and (max-height:578px) {
+    .projects_second .container .content img {
+        width: 60%
+    }
+}
+
+@media screen and (max-height:459px) {
+    .projects_second .container .content img {
+        width: 40%
+    }
+    .projects_second .container .content .title {
+        font-size: 22px
+    }
+    .projects_second .container .content {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width:515px) {
+    .projects .container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "smart_cross_walk landscaping""architectural_lighting lighting_of_swimming_pools"
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .projects_second .container .content {
+        flex-direction: column;
+        justify-content: flex-start
+    }
+    .projects_second .container .content>div {
+        width: 98%;
+        height: 29%;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .projects_second .container .content .reliable_practical {
+        margin: 5px auto
+    }
+    .projects_second .container .content img {
+        width: 20%;
+        height: 60%;
+        margin-right: 10px
+    }
+    .projects_second .container .content div .box {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start
+    }
+    .projects_second .container .content .beautiful_aesthetic .box div,
+    .projects_second .container .content .reliable_practical .box div,
+    .projects_second .container .content .wide_range .box div {
+        margin: 0
+    }
+    .projects_second .container .content .title {
+        margin: 5px 0
+    }
+}
+
+@media screen and (max-width:501px) {
+    .homepage .container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "main main"". ."
+    }
+    .homepage .container .grid-container .main .description p {
+        font-size: 12px
+    }
+    .homepage .container .grid-container .main .title .title_company {
+        font-size: 30px
+    }
+    .homepage .container .grid-container .main .title span {
+        font-size: 18px
+    }
+    .homepage .container .grid-container .main .description p {
+        padding: 0 10px
+    }
+    .gallery .container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "rybigne pribrezhniy_park""private_property central_park""central_park1 central_park1"
+    }
+    .second_gallery .container .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "dnepr gorishny_plavni""central_park pribrezhniy_park""post_ave post_ave"
+    }
+    .homepage .container .grid-container .main .title .title_company {
+        font-size: 50px
+    }
+}
+
+@media screen and (max-width:421px) {
+    .projects_second .container .content .title {
+        font-size: 16px
+    }
+    .projects_second .container .content {
+        font-size: 11px
+    }
+}
+
+@media screen and (max-width:415px) {
+    .application .container .grid-container .area .show .border_bottom,
+    .application .container .grid-container .cycle_track .show .border_bottom,
+    .application .container .grid-container .garden .show .border_bottom,
+    .application .container .grid-container .led_stone .show .border_bottom,
+    .application .container .grid-container .led_tree .show .border_bottom,
+    .application .container .grid-container .pavement .show .border_bottom,
+    .application .container .grid-container .reservior .show .border_bottom,
+    .application .container .grid-container .traffic_lights .show .border_bottom,
+    .application .container .grid-container .under_the_order .show .border_bottom,
+    .application .container .grid-container .wall_mounting .show .border_bottom {
+        font-size: 11px
+    }
+    .beware_of_fakes .container .storage {
+        width: 70%
+    }
+    .carousel-3d-item .slide-img {
+        width: 180px
+    }
+    .slider-container {
+        perspective: 250px
+    }
+    .carousel-3d-item {
+        left: 28%
+    }
+    .slider-container figure input:nth-child(1) {
+        left: 37%
+    }
+    .slider-container figure input:nth-child(3) {
+        right: 34%
+    }
+    .beware_of_fakes .container .patent a {
+        font-size: 14px
+    }
+    .connection .container .content .main {
+        width: 90%
+    }
+    .connection .container .content .main p {
+        margin: 10px 0 20px 0
+    }
+    .connection .container .content .main .download a {
+        font-size: 15px
+    }
+    .connection .container .content .main .spec .tel {
+        width: 86%;
+        font-size: 15px
+    }
+    .connection .container .content .image {
+        margin: 0;
+        width: 69%
+    }
+    .contacts .container .content .main {
+        margin: 0;
+        width: 90%
+    }
+    .contacts .container .content .main .adress,
+    .contacts .container .content .main .adress1,
+    .contacts .container .content .main .contact {
+        margin-top: 10px
+    }
+    .contacts .container .content .main .contact .pos {
+        margin-top: 10px
+    }
+    .contacts .container .content .image {
+        margin: 1%;
+        width: 100%
+    }
+    .contacts .container .content .image img {
+        width: 100%
+    }
+    .homepage .container .grid-container .main .title .title_company {
+        font-size: 35px
+    }
+    .homepage .container .grid-container .main .title span {
+        font-size: 24px
+    }
+}
+
+@media screen and (max-width:376px) {
+    .application .container .grid-container .area .description .con span,
+    .application .container .grid-container .led_stone .description .con span,
+    .application .container .grid-container .led_tree .description .con span,
+    .application .container .grid-container .pavement .description .con span,
+    .application .container .grid-container .wall_mounting .description .con span {
+        font-size: 10px
+    }
+    .application .container .grid-container .cycle_track .description .con span,
+    .application .container .grid-container .garden .description .con span,
+    .application .container .grid-container .reservior .description .con span,
+    .application .container .grid-container .traffic_lights .description .con span,
+    .application .container .grid-container .under_the_order .description .con span {
+        font-size: 11px
+    }
+    .application .container .grid-container .traffic_lights .description .con span {
+        font-size: 11px
+    }
+    .application .container .grid-container .area .show .border_bottom,
+    .application .container .grid-container .cycle_track .show .border_bottom,
+    .application .container .grid-container .garden .show .border_bottom,
+    .application .container .grid-container .led_stone .show .border_bottom,
+    .application .container .grid-container .led_tree .show .border_bottom,
+    .application .container .grid-container .pavement .show .border_bottom,
+    .application .container .grid-container .reservior .show .border_bottom,
+    .application .container .grid-container .traffic_lights .show .border_bottom,
+    .application .container .grid-container .under_the_order .show .border_bottom,
+    .application .container .grid-container .wall_mounting .show .border_bottom {
+        font-size: 11px
+    }
+    .beware_of_fakes .container .content .sertificate .title {
+        font-size: 20px
+    }
+    .carousel-3d-item {
+        left: 25%
+    }
+    .beware_of_fakes .container .storage {
+        width: 60%
+    }
+    .connection .container .content .main p {
+        font-size: 13px
+    }
+}
+
+@media screen and (max-width:361px) {
+    .slider-container figure input {
+        position: absolute;
+        bottom: -10%
+    }
+    .connection .container .content .main .spec .tel {
+        font-size: 14px
+    }
+    .contacts .container .content .main .adress .pos span,
+    .contacts .container .content .main .adress1 .pos span,
+    .contacts .container .content .main .contact .pos span {
+        font-size: 15px
+    }
+}
+
+@media screen and (max-width:321px) {
+    .application .container .grid-container .area .show .border_bottom,
+    .application .container .grid-container .cycle_track .show .border_bottom,
+    .application .container .grid-container .garden .show .border_bottom,
+    .application .container .grid-container .led_stone .show .border_bottom,
+    .application .container .grid-container .led_tree .show .border_bottom,
+    .application .container .grid-container .pavement .show .border_bottom,
+    .application .container .grid-container .reservior .show .border_bottom,
+    .application .container .grid-container .traffic_lights .show .border_bottom,
+    .application .container .grid-container .under_the_order .show .border_bottom,
+    .application .container .grid-container .wall_mounting .show .border_bottom {
+        font-size: 9px
+    }
+    .application .container .grid-container .area .show .border_bottom,
+    .application .container .grid-container .cycle_track .show .border_bottom,
+    .application .container .grid-container .garden .show .border_bottom,
+    .application .container .grid-container .led_stone .show .border_bottom,
+    .application .container .grid-container .led_tree .show .border_bottom,
+    .application .container .grid-container .pavement .show .border_bottom,
+    .application .container .grid-container .reservior .show .border_bottom,
+    .application .container .grid-container .traffic_lights .show .border_bottom,
+    .application .container .grid-container .under_the_order .show .border_bottom,
+    .application .container .grid-container .wall_mounting .show .border_bottom {
+        width: 95%
+    }
+    .connection .container .content .main h2 {
+        font-size: 20px
+    }
+    .connection .container .content .main .download {
+        height: 30px
+    }
+    .connection .container .content .main .download a {
+        font-size: 13px
+    }
+    .connection .container .content .main .spec .tel {
+        font-size: 12px
+    }
+    .connection .container .content .main .spec {
+        height: 30px
+    }
+    .connection .container .content .image {
+        width: 63%
+    }
+    .contacts .container .content .image {
+        width: 85%
+    }
+    .slider-container {
+        perspective: 150px
+    }
+    .carousel-3d-item .slide-img {
+        width: 150px
+    }
+    .slider-container figure input {
+        bottom: -5%
+    }
+    .slider-container figure input:nth-child(1) {
+        left: 31%
+    }
+    .slider-container figure input:nth-child(3) {
+        right: 28%
+    }
+}
+
+@media screen and (min-height:1365px) {
+    .homepage .container .grid-container .main .description p {
+        font-size: 18px
+    }
+    .homepage .container .grid-container {
+        height: 94%
+    }
+    .beware_of_fakes .container .content,
+    .connection .container .content,
+    .contacts .container .content {
+        margin-top: 30%
+    }
+    .carousel-3d-item .slide-img {
+        width: 300px
+    }
+    .carousel-3d-item {
+        left: 14%
+    }
+    .projects_second .container .content .title {
+        font-size: 26px
+    }
+    .projects_second .container .content img {
+        width: 40%
+    }
+    .projects_second .container .content {
+        font-size: 24px
+    }
+}
